@@ -3,6 +3,7 @@ import './globals.css';
 import { SiteNav } from '@/components/SiteNav';
 import { SiteFooter } from '@/components/SiteFooter';
 import { AuthProvider } from '@/lib/authContext';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Bail Reckoner — Statutory Bail Computation for Indian Courts (SIH268405)',
@@ -28,6 +29,7 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <SiteFooter />
         </AuthProvider>
+        <Analytics />
       </body>
     </html>
   );
