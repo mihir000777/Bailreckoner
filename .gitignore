@@ -1,0 +1,49 @@
+# Dependencies
+/node_modules
+/.pnpm-store
+
+# Next.js & Build Outputs
+/.next/
+/out/
+/build/
+/dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment & Local Configuration
+.env.local
+.env.*.local
+!.env.example
+!.env.local.example
+
+# AI Skills & Tools
+/skills/
+/.skills/
+skills.json
+/antigravity-skills*
+*skills*
+
+# Chat Logs & Exported Transcripts
+/chat/
+/.chat/
+/chat_logs/
+/logs/
+chat-*.json
+*.chat.json
+
+# Memory & AI Agent Brain State Files
+MEMORY.md
+/memory/
+/.memory/
+/brain/
+/.brain/
+/.agents/
+/.gemini/
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
