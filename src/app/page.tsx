@@ -18,14 +18,14 @@ export default function HomePage() {
     <div className="min-h-screen bg-background font-sans text-foreground selection:bg-accent/20">
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden px-6 pb-40 pt-24">
-          <div className="mx-auto grid max-w-6xl items-end gap-20 lg:grid-cols-2">
-            <div className="mb-10 space-y-12">
-              <div className="space-y-6">
+        <section className="relative overflow-hidden px-4 sm:px-6 pb-16 sm:pb-40 pt-10 sm:pt-24">
+          <div className="mx-auto grid max-w-6xl items-end gap-10 sm:gap-20 lg:grid-cols-2">
+            <div className="mb-4 sm:mb-10 space-y-6 sm:space-y-12">
+              <div className="space-y-4 sm:space-y-6">
                 <div className="inline-block border border-accent/40 px-2 py-1 font-mono text-[9px] uppercase tracking-[0.2em] text-accent">
                   {language === 'kn' ? 'ಶಾಸನಬದ್ಧ ನವೀಕರಣ BNSS 2023 / CrPC' : language === 'hi' ? 'वैधानिक अद्यतन BNSS 2023 / CrPC' : 'Statutory Update BNSS/2026'}
                 </div>
-                <h1 className="text-balance font-display text-6xl sm:text-7xl italic leading-[0.9] tracking-tighter md:text-8xl">
+                <h1 className="text-balance font-display text-4xl sm:text-7xl italic leading-[0.98] sm:leading-[0.9] tracking-tighter md:text-8xl">
                   {language === 'kn' ? (
                     <>ವಿಳಂಬಿತ ನ್ಯಾಯವು ಸ್ವಾತಂತ್ರ್ಯದ <span className="text-accent">ನಿರಾಕರಣೆ</span>.</>
                   ) : language === 'hi' ? (
@@ -35,7 +35,7 @@ export default function HomePage() {
                   )}
                 </h1>
               </div>
-              <p className="max-w-md text-lg leading-relaxed text-muted-foreground">
+              <p className="max-w-md text-base sm:text-lg leading-relaxed text-muted-foreground">
                 {t.tagline}
               </p>
               <div className="flex gap-4">
